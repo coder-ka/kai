@@ -253,9 +253,6 @@ All paths are resolved against the run's `cwd` and rejected if they escape it.
 - **One run, one goal.** No chat state machine, no hidden user turns.
 - **The transcript is the only state.** Sync and async results both append to
   one ordered message list; there are no side channels.
-- **Structured output, not native tool calls.** The model replies with one JSON
-  object (`toolCalls` and/or `result`). This works with any provider and makes
-  async results trivial to correlate.
 - **Small surface.** `kai`, `run`, `tool`, `asyncTool`, `contribution`,
   `Provider`.
 

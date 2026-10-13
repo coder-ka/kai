@@ -12,9 +12,9 @@ export interface CompleteRequest {
 /**
  * A minimal language model provider.
  *
- * kai owns the conversation and the structured output protocol; a provider is
- * only responsible for turning a system prompt plus messages into text. This
- * keeps the harness independent from any SDK.
+ * kai owns the conversation and the tool-call transport; a provider is only
+ * responsible for turning a system prompt plus messages into text. This keeps
+ * the harness independent from any SDK.
  */
 export interface Provider {
   readonly name: string;
